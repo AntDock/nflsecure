@@ -1,5 +1,4 @@
-> **We're sorry,but English docs aren't ready yet. We'll finish those very soon!**   
-> The docs below are still Chinese.
+> **English** / [中文](/docs)
 
 # 你好，欢迎使用 NFLSecure！
 

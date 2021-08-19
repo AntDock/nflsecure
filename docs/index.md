@@ -1,3 +1,5 @@
+> [English](en) / **中文**
+
 # 你好，欢迎使用 NFLSecure！
 
 本工具可以帮助你实时防护和快速杀除常见的以下几种病毒：
@@ -126,9 +128,7 @@ Warning - 建议使用管理员权限运行，清理更彻底
 
 # <span id="feedback">反馈问题</span>
 
-最后，如果你遇到了实在过于棘手的难题，请向我们反馈。
-
-<script type="text/javascript" src="http://www.wenjuan.com/iframe/611db2106b935933bf3b6244/?params=hide_mobile_icon=true"></script>
+最后，[如果你遇到了实在过于棘手的难题，请向我们反馈。](https://www.wenjuan.com/s/UZBZJvwPRH/)
 
 
 
