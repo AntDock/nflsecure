@@ -1,13 +1,13 @@
-> **English** / [中文](https://antdock.cn/NFLSecure)
+> **English** / [中文](https://antdock.cn/NFLSecure)  
 
 # Hello and thanks for choosing NFLSecure！
 
 Our tool can help you prevent and kill these viruses common on NFLS PCs:
 
 - **Avast (CEF-FakeDisk)**
-    A worm-type virus that hides all files in your removable disks and generates .ink shortcuts.
+    A worm-type virus that hides all files in your removable disks and generates .ink shortcuts in the root directories.
 - **FakeFolder** 
-    A worm-type virus that changes all folders in your removable disks to .exe programs.
+    A worm-type virus that changes all folders in the root directories of your removable disks to .exe programs.
     
 If you're encountering a virus that is not enlisted, please [report a virus](#feedback).
 
@@ -39,9 +39,10 @@ If you do not wish to give the program administrator privileges, you can run it 
 
 # <span id="setup&use">Getting Your Hands On It</span>
 
-><span id="language_problem">We're sorry. Since most of the PCs in NFLS are in Chinese, the main program does not come with an English interface. 
+><span id="language_problem">We're sorry. Since most of the PCs in NFLS are in Chinese, the main program does not come with an English interface.   
+>However, it's on the way! You can read the docs here as an alternative, since the program is user-friendly.
 
->However, it's on the way! You can read the docs here as an alternative, since the program is user-friendly.</span>
+</span>
 
 After you start the program, you will see the acknowledgements:
 
@@ -138,10 +139,10 @@ Warning - 建议使用管理员权限运行，清理更彻底
 
 # <span id="feedback">Feedback</span>
 
-Please give us feedback on new viruses and bugs [here](https://www.wenjuan.com/s/UZBZJvwPRH/).
+Seeing something unexpcted? Please give us feedback on new viruses and bugs [here](https://www.wenjuan.com/s/UZBZJvwPRH/).
 
+# <span id="credits">Credits</span>
 
-
-
-
-
+### NFLSecure is maintained by 张哲涵 (Eric), 皮睿杰 (Perry) and 马涵政 (LittleButterfly).   
+### All documents are updated by 张哲涵 (Eric).   
+### Please give us feedback if you have any problems.
