@@ -1,47 +1,49 @@
-> **English** / [中文](/docs)
+> **English** / [中文](https://antdock.cn/NFLSecure)
 
-# 你好，欢迎使用 NFLSecure！
+# Hello and thanks for choosing NFLSecure！
 
-本工具可以帮助你实时防护和快速杀除常见的以下几种病毒：
+Our tool can help you prevent and kill these viruses common on NFLS PCs:
 
-- **Avast (CEF-FakeDisk)** 
-    蠕虫病毒，使U盘根目录内所有文件隐藏，生成一个U盘快捷方式
+- **Avast (CEF-FakeDisk)**
+    A worm-type virus that hides all files in your removable disks and generates .ink shortcuts.
 - **FakeFolder** 
-    蠕虫病毒，使U盘根目录所有文件夹变为 .exe 格式
+    A worm-type virus that changes all folders in your removable disks to .exe programs.
     
-如果你所遭遇的病毒不在上述列表中，请[反馈问题](#feedback)。
+If you're encountering a virus that is not enlisted, please [report a virus](#feedback).
 
-除此之外，最新的测试版加入了清理电脑垃圾的功能，可快速安全清除不需要的系统缓存。
+Except for virus-killing features, NFLSecure can also help you clean your computer with the Dump mode.
 
-（该功能要求使用管理员权限运行主程序才能完整清理，更多提示请见下节。）
+(This might require administrator privileges. See next part for more information.)
 
-# <span id="quick_start">快速开始</span>
+# <span id="quick_start">Quick Start</span>
 
-首先，下载 [最新版本(测试)](https://github.com/AntDock/nflsecure/releases/tag/5.0.210818-Dev)。
+First, Download [the latest version (Developer Beta)](https://github.com/AntDock/nflsecure/releases/tag/5.0.210818-Dev) of NFLSecure. [(There isn't an English interface yet. Click here to know more.)](#language_problem)
 
-该版本是 5.0 Devloper Beta 早期测试版，**同时兼容 Windows 7 到 Windows 10**，但可能有不稳定情况，故源代码没有予以封装，直接以 .zip 形式下载。
+This is a 5.0 Developer Beta that **is compatible with devices running Windows 7 to Windows 10**. However, due to the fact that this version may be unstable, a .zip archive is presented instead of the normal .exe.
 
-接下来，打开下载的文件。 
+Next, open the downloaded file.
 
-**正式版**是一个 .exe 文件，直接点击运行即可，会自动要求清理垃圾所需的管理员权限。 
+**The Offical Version** is an click-to-run .exe file, which automatically asks for the administrator privileges that cleaning your system drive will require.
 
-**开发版和测试版**均为 .zip 压缩包， Windows 10 的系统集成可以让你在文件管理器中直接打开 .zip 。 
+**The Development and Beta Versions** are both .zip archives. In Windows 10, you can open it directly in the files app.
 
-点击打开压缩包后，请右键点击 main.bat，在右键菜单中选取“以管理员身份运行”。
+After opening the archive, choose 'Run with administrator privileges' in the right click menu.
 
-完成授权即可开始使用。
+And there you go.
 
-（开始运行时会提示解压所有文件，请予以解压，以后就使用解压目标文件夹中的文件运行）。
+(You may need to unzip the files before you run for the first time. After that, run it from where you unzipped the file.)
 
-若您不愿意使用管理员权限运行，请直接双击打开 main.bat，但清理垃圾部分可能无法发挥其设计作用。
+If you do not wish to give the program administrator privileges, you can run it directly, but the cleaning functions may not work properly.
 
-**重要提示：在开发版/测试版中，如果遇到窗口不断弹出等严重问题，请直接运行 .zip 压缩包内的 killall.bat，关闭所有组件并向开发人员[反馈问题](#feedback)。**
+**Important Notice: In Development and Beta Versions, if the program goes horribly wrong and you would like to stop it, please run the 'killall.bat' in the unzipped folder. After doing so, please consider [giving us feedback](#feedback).**
 
-# <span id="setup&use">如何使用</span>
+# <span id="setup&use">Getting Your Hands On It</span>
 
-打开程序后，程序会立刻调用4个组件在任务栏运行。这4个组件将为你防护病毒入侵。
+><span id="language_problem">We're sorry. Since most of the PCs in NFLS are in Chinese, the main program does not come with an English interface. 
 
-主程序的 CMD 界面应显示版权信息，大略如下：
+>However, it's on the way! You can read the docs here as an alternative, since the program is user-friendly.</span>
+
+After you start the program, you will see the acknowledgements:
 
 ```
 ―――――――――――――――――――――――――――
@@ -52,10 +54,10 @@ NFLSecure 南京外国语学校 班级电脑杀毒工具
 张哲涵、皮睿杰、马涵政制作。本软件可按照 MIT 开源许可
 协议使用。建议使用管理员权限访问。
 ―――――――――――――――――――――――――――
-请按任意键继续..._
+Press any key to continue..._
 ```
 
-按下键盘任意键即可看到如下的主界面。
+Press any key on your PC to open the main menu.
 
 ```
 ―――――――――――――――――――――――――――
@@ -73,13 +75,17 @@ NFLSecure 南京外国语学校 班级电脑杀毒工具
 操作：_
 ```
 
-选择一个你要运行的操作，输入该操作对应的大写字母。例如，如果要进行全局杀毒，在键盘上按下输入大写 G 并按下 Enter 即可。
+Choose one of the functions that you would like to use and input the designated command (capitalized).
 
-接下来为您一一介绍这几个功能。
+Here are your choices. 
 
-## <span id="global_mode">全局杀毒</span>
+## <span id="global_mode">Global Virus-Killing</span>
 
-运行此功能后，系统会提示您处理U盘根目录下的所有 .exe 文件和 .ink 快捷方式，防止在杀毒时误删正常文件。
+### Command: G
+
+Remember to take care of all your .ink and .exe files in the root directory of your disk before running this. They may get deleted.
+
+There will be a prompt telling you to do so:
 
 ```
 ―――――――――――――――――――――――――――
@@ -90,28 +96,32 @@ NFLSecure 南京外国语学校 班级电脑杀毒工具
 继续运行前：请确保您的可移除磁盘的根目录下无任何 .EXE
 或 .INK 文件，它们会被直接删除。
 ―――――――――――――――――――――――――――
-请按任意键继续..._
+Press any key to continue..._
 ```
 
-处理好您的文件之后，按下键盘任意键，杀毒就会开始。 杀毒结束后，系统会提示您并返回主界面。
+After you find a safe place to keep all your .ink and .exe files elsewhere, you can press any key to start the Global Virus-Killing process.
+
+It's automatic. You'll see this prompt when it's done.
 
 
 ```
 ―――――――――――――――――――――――――――
 全局杀毒完成！
 ―――――――――――――――――――――――――――
-请按任意键继续..._
+Press any key to continue..._
 ```
 
-## <span id="partial_mode">专杀模式</span>
+## <span id="partial_mode">Partial Virus-Killing</span>
 
-此模式与全局模式原理类似，在非必要情形下，建议使用全局模式。 此处就不再赘述。
+### Command: P
 
-## <span id="dump_mode">清理垃圾</span>
+This is very similar to the Global mode, but you can specify which virus you would like to kill. We strongly advise you to use the Global mode which is better.
 
-为了能够删除系统缓存，建议使用管理员权限运行本程序再清理垃圾。 [运行方式请见“快速开始”章节。](#quick_start)
+## <span id="dump_mode">Dump Mode</span>
 
-该模式会自动运行并在错误栏中显示删除的文件。
+We advise you to run NFLSecure with administrator privileges so that this function can work better. [See 'Quick Start' for more information.](#quick_start)
+
+The deleted files' filenames will be shown.
 
 ```
 ―――――――――――――――――――――――――――
@@ -126,11 +136,9 @@ Warning - 建议使用管理员权限运行，清理更彻底
 ―――――――――――――――――――――――――――
 ```
 
-# <span id="feedback">反馈问题</span>
+# <span id="feedback">Feedback</span>
 
-最后，如果你遇到了实在过于棘手的难题，请向我们反馈。
-
-<script type="text/javascript" src="http://www.wenjuan.com/iframe/611db2106b935933bf3b6244/?params=hide_mobile_icon=true"></script>
+Please give us feedback on new viruses and bugs [here](https://www.wenjuan.com/s/UZBZJvwPRH/).
 
 
 
